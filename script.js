@@ -50,7 +50,7 @@ const calcTemp = (type, val) => {
 
 document.querySelector('.container').addEventListener('input',(e) => {
     const el = e.target;
-    const val = el.value;
+    const val = parseInt(el.value);
     const type = el.name;
 
     calcTemp(type,val)
