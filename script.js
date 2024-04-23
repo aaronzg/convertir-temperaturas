@@ -52,6 +52,10 @@ document.querySelector('.container').addEventListener('input',(e) => {
     const el = e.target;
     const val = parseInt(el.value);
     const type = el.name;
-
-    calcTemp(type,val)
+    if(val == '-' || isNaN(val)){
+       
+}else{
+  calcTemp(type,val)
+}
+    
 })
